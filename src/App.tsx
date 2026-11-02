@@ -604,7 +604,7 @@ export default function App() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-gutter-desktop items-center">
                 {/* Hero Left Column */}
                 <div className="lg:col-span-7 flex flex-col items-start gap-4 sm:gap-space-lg">
-                  {/* Wix Verified Partner & Clutch Badges */}
+                  {/* Wix Verified Partner & Fiverr Review Badges */}
                   <div className="flex flex-wrap items-center gap-2">
                     <a
                       href={WIX_PARTNER_URL}
@@ -625,24 +625,24 @@ export default function App() {
                     </a>
 
                     <a
-                      href={CLUTCH_PROFILE_URL}
+                      href={FIVERR_PROFILE_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 bg-surface-container-lowest px-2.5 py-1 sm:px-space-md sm:py-1.5 rounded-full shadow-xs border border-tertiary-container/30 hover:shadow-md hover:border-tertiary-container transition-all cursor-pointer group text-xs sm:text-label-md"
-                      title="View Clutch Profile for CFC Designer"
+                      className="inline-flex items-center gap-1.5 bg-surface-container-lowest px-2.5 py-1 sm:px-space-md sm:py-1.5 rounded-full shadow-xs border border-surface-container hover:shadow-md hover:border-[#1DBF73]/50 transition-all cursor-pointer group text-xs sm:text-label-md"
+                      title="View Fiverr Profile - 4.9 (550+ verified reviews) on Fiverr & Upwork"
                     >
-                      <span className="flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#bc4800] text-on-primary text-[10px] sm:text-[11px] font-bold">
-                        C.
-                      </span>
-                      <span className="font-semibold text-on-surface tracking-wide group-hover:text-[#bc4800] transition-colors">
-                        Clutch Verified
+                      <span className="flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#1DBF73] text-white text-[10px] sm:text-[11px] font-bold">
+                        fi.
                       </span>
                       <span className="flex items-center text-amber-500">
                         <span className="material-symbols-outlined text-[13px] sm:text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                           star
                         </span>
                       </span>
-                      <span className="text-[#bc4800] font-bold text-[11px] sm:text-xs">4.9/5.0</span>
+                      <span className="font-semibold text-on-surface tracking-wide group-hover:text-[#0d7d49] transition-colors">
+                        4.9 <span className="font-normal text-secondary">(550+ verified reviews)</span>
+                      </span>
+                      <span className="text-[#0d7d49] font-medium text-[11px] sm:text-xs">on Fiverr &amp; Upwork</span>
                       <span className="material-symbols-outlined text-[13px] text-secondary opacity-60">open_in_new</span>
                     </a>
                   </div>
@@ -680,21 +680,17 @@ export default function App() {
                     </a>
                     <span className="text-outline-variant hidden sm:inline">•</span>
                     <a
-                      href={CLUTCH_PROFILE_URL}
+                      href={FIVERR_PROFILE_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 font-semibold text-[#bc4800] hover:underline"
+                      className="flex items-center gap-1.5 font-semibold text-[#0d7d49] hover:underline"
                     >
-                      <span className="w-2 h-2 rounded-full bg-[#bc4800]"></span>
-                      Clutch 4.9/5.0
+                      <span className="w-2 h-2 rounded-full bg-[#1DBF73]"></span>
+                      4.9★ (550+ reviews)
                     </a>
                     <span className="text-outline-variant hidden sm:inline">•</span>
                     <div className="flex items-center gap-1.5">
                       <span className="font-semibold text-on-surface">2000+</span> Projects Done
-                    </div>
-                    <span className="text-outline-variant hidden sm:inline">•</span>
-                    <div className="flex items-center gap-1.5">
-                      <span className="font-semibold text-on-surface">500+</span> Reviews
                     </div>
                   </div>
 
@@ -777,7 +773,10 @@ export default function App() {
                     Client Reviews
                   </h2>
                   <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 px-3 py-1.5 sm:px-3.5 sm:py-1.5 rounded-full bg-surface-container-lowest border border-surface-container shadow-xs text-on-surface text-xs sm:text-sm">
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-4 h-4 rounded-full bg-[#1DBF73] text-white flex items-center justify-center font-bold text-[10px] leading-none shrink-0">
+                        fi.
+                      </span>
                       <span className="material-symbols-outlined text-[16px] sm:text-[18px] text-amber-500 shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
                         star
                       </span>
@@ -785,7 +784,7 @@ export default function App() {
                         4.9
                       </span>
                       <span className="font-label-sm text-secondary font-medium text-[11px] sm:text-xs">
-                        (550+ verified reviews)
+                        (550+ verified reviews) on Fiverr &amp; Upwork
                       </span>
                     </div>
                     <span className="text-outline-variant/60 font-light">•</span>
@@ -796,7 +795,7 @@ export default function App() {
                   </div>
                 </div>
                 <p className="font-body-md text-xs sm:text-body-md text-secondary mt-2 sm:mt-space-sm max-w-2xl leading-relaxed">
-                  Rated <strong className="text-on-surface font-semibold">4.9/5.0 across 550+ verified client reviews</strong> and 2,000+ successfully delivered projects across the United States, UK, Canada, France, Germany, Italy, Switzerland, Estonia, and Ireland.
+                  Rated <strong className="text-on-surface font-semibold">4.9/5.0 across 550+ verified client reviews on Fiverr &amp; Upwork</strong> and 2,000+ successfully delivered projects across the United States, UK, Canada, France, Germany, Italy, Switzerland, Estonia, and Ireland.
                 </p>
               </div>
 
@@ -929,51 +928,7 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* 2. Clutch Profile */}
-                <div className="bg-surface-container-lowest p-4 sm:p-space-lg rounded-xl shadow-md flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-lg border-2 border-tertiary-container relative overflow-hidden">
-                  <div className="absolute top-0 right-0 left-0 h-1.5 bg-tertiary-container"></div>
-                  <div className="flex flex-col items-start gap-3 sm:gap-space-md">
-                    <div className="w-full flex items-center justify-between">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-surface-container-lowest flex items-center justify-center p-2 shadow-xs border border-surface-container">
-                        <img
-                          src="https://images.seeklogo.com/logo-png/35/1/clutch-logo-png_seeklogo-352148.png"
-                          alt="Clutch Logo"
-                          className="w-full h-full object-contain"
-                        />
-                      </div>
-                      <span className="px-2 py-1 rounded-full text-[10px] sm:text-[11px] font-bold bg-[#ffede6] text-[#bc4800] flex items-center gap-1 shadow-xs">
-                        <span className="material-symbols-outlined text-[13px] text-amber-500" style={{ fontVariationSettings: "'FILL' 1" }}>
-                          star
-                        </span>
-                        4.9 (100% Rec.)
-                      </span>
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <h3 className="font-headline-md text-base sm:text-headline-sm font-bold text-on-surface">Clutch Profile</h3>
-                        <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-[#ffede6] text-[#bc4800]">
-                          Verified Partner
-                        </span>
-                      </div>
-                      <p className="font-body-sm text-xs sm:text-body-sm text-secondary mt-space-xs leading-relaxed">
-                        Top-Rated Clutch Web Developer &amp; Enterprise Partner with independently verified B2B client reviews, case studies, and enterprise references.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-4 sm:mt-space-lg pt-3 sm:pt-space-md border-t border-surface-container">
-                    <a
-                      className="inline-flex items-center justify-center w-full gap-space-xs px-space-md py-2.5 rounded-lg bg-tertiary-container text-on-primary font-label-md text-xs sm:text-label-md hover:bg-tertiary transition-colors shadow-sm font-semibold"
-                      href={CLUTCH_PROFILE_URL}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <span>View Verified Clutch Profile</span>
-                      <span className="material-symbols-outlined text-[16px]">open_in_new</span>
-                    </a>
-                  </div>
-                </div>
-
-                {/* 3. Fiverr Profile */}
+                {/* 2. Fiverr Profile */}
                 <div className="bg-surface-container-lowest p-4 sm:p-space-lg rounded-xl shadow-xs border border-surface-container flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
                   <div className="flex flex-col items-start gap-3 sm:gap-space-md">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#1DBF73]/10 text-[#1DBF73] flex items-center justify-center font-bold text-xl sm:text-2xl tracking-tighter shadow-xs">
@@ -987,24 +942,24 @@ export default function App() {
                         </span>
                       </div>
                       <p className="font-body-sm text-xs sm:text-body-sm text-secondary mt-space-xs leading-relaxed">
-                        Top Rated Freelancer &amp; Wix Specialist available for fixed-price contracts and direct orders.
+                        Top Rated Freelancer &amp; Wix Specialist with 500+ five-star reviews for custom web design &amp; development.
                       </p>
                     </div>
                   </div>
                   <div className="mt-4 sm:mt-space-lg pt-3 sm:pt-space-md border-t border-surface-container">
                     <a
-                      className="inline-flex items-center justify-center w-full gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-xs sm:text-label-md hover:bg-surface-container-high transition-colors"
+                      className="inline-flex items-center justify-center w-full gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-xs sm:text-label-md hover:bg-surface-container-high transition-colors font-medium"
                       href={FIVERR_PROFILE_URL}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span>View Profile</span>
+                      <span>View Fiverr Profile</span>
                       <span className="material-symbols-outlined text-[16px] text-secondary">open_in_new</span>
                     </a>
                   </div>
                 </div>
 
-                {/* 4. Fiverr Agency */}
+                {/* 3. Fiverr Agency */}
                 <div className="bg-surface-container-lowest p-4 sm:p-space-lg rounded-xl shadow-xs border border-surface-container flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
                   <div className="flex flex-col items-start gap-3 sm:gap-space-md">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 text-primary-container flex items-center justify-center shadow-xs">
@@ -1020,18 +975,61 @@ export default function App() {
                         </span>
                       </div>
                       <p className="font-body-sm text-xs sm:text-body-sm text-secondary mt-space-xs leading-relaxed">
-                        Dedicated agency profile handling complex enterprise scopes, team workflows, and multi-tier deliverables.
+                        Dedicated agency profile (CFC Designer) managing full-scale web production, migrations, and team workflows.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mt-4 sm:mt-space-lg pt-3 sm:pt-space-md border-t border-surface-container">
+                    <a
+                      className="inline-flex items-center justify-center w-full gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-xs sm:text-label-md hover:bg-surface-container-high transition-colors font-medium"
+                      href={FIVERR_AGENCY_URL}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span>View Agency Profile</span>
+                      <span className="material-symbols-outlined text-[16px] text-secondary">open_in_new</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* 4. Clutch Profile (Highlight OFF - standard card) */}
+                <div className="bg-surface-container-lowest p-4 sm:p-space-lg rounded-xl shadow-xs border border-surface-container flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+                  <div className="flex flex-col items-start gap-3 sm:gap-space-md">
+                    <div className="w-full flex items-center justify-between">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-surface-container-lowest flex items-center justify-center p-2 shadow-xs border border-surface-container">
+                        <img
+                          src="https://images.seeklogo.com/logo-png/35/1/clutch-logo-png_seeklogo-352148.png"
+                          alt="Clutch Logo"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[13px] text-amber-500" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          star
+                        </span>
+                        4.9 Rating
+                      </span>
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-headline-md text-base sm:text-headline-sm font-bold text-on-surface">Clutch Profile</h3>
+                        <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary">
+                          Verified
+                        </span>
+                      </div>
+                      <p className="font-body-sm text-xs sm:text-body-sm text-secondary mt-space-xs leading-relaxed">
+                        Clutch B2B directory profile with independently gathered client reviews and verification.
                       </p>
                     </div>
                   </div>
                   <div className="mt-4 sm:mt-space-lg pt-3 sm:pt-space-md border-t border-surface-container">
                     <a
                       className="inline-flex items-center justify-center w-full gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-xs sm:text-label-md hover:bg-surface-container-high transition-colors"
-                      href={FIVERR_AGENCY_URL}
+                      href={CLUTCH_PROFILE_URL}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <span>View Agency Profile</span>
+                      <span>View Profile</span>
                       <span className="material-symbols-outlined text-[16px] text-secondary">open_in_new</span>
                     </a>
                   </div>
@@ -1057,17 +1055,30 @@ export default function App() {
                   <span className="group-hover:text-primary transition-colors whitespace-nowrap">Wix Verified Partner</span>
                 </a>
 
-                {/* Clutch.co */}
+                {/* Fiverr Profile */}
                 <a
-                  className="inline-flex items-center gap-1.5 sm:gap-space-sm px-3 py-2 sm:px-space-md sm:py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-xs sm:text-label-md shadow-xs border border-surface-container hover:shadow-md hover:bg-surface-container hover:border-[#bc4800]/40 transition-all"
-                  href={CLUTCH_PROFILE_URL}
+                  className="inline-flex items-center gap-1.5 sm:gap-space-sm px-3 py-2 sm:px-space-md sm:py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-xs sm:text-label-md shadow-xs border border-surface-container hover:shadow-md hover:bg-surface-container hover:border-[#1DBF73]/40 transition-all group"
+                  href={FIVERR_PROFILE_URL}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="material-symbols-outlined text-[18px] sm:text-[20px] text-[#bc4800]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                    verified_user
+                  <span className="w-4 h-4 rounded-full bg-[#1DBF73] text-white flex items-center justify-center font-bold text-[10px] shrink-0 leading-none">
+                    fi.
                   </span>
-                  <span>Clutch.co</span>
+                  <span className="group-hover:text-[#0d7d49] transition-colors whitespace-nowrap">Fiverr Profile</span>
+                </a>
+
+                {/* Fiverr Agency */}
+                <a
+                  className="inline-flex items-center gap-1.5 sm:gap-space-sm px-3 py-2 sm:px-space-md sm:py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-xs sm:text-label-md shadow-xs border border-surface-container hover:shadow-md hover:bg-surface-container hover:border-primary-container/40 transition-all group"
+                  href={FIVERR_AGENCY_URL}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span className="material-symbols-outlined text-[16px] sm:text-[18px] text-primary shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
+                    corporate_fare
+                  </span>
+                  <span className="group-hover:text-primary transition-colors whitespace-nowrap">Fiverr Agency</span>
                 </a>
 
                 {/* LinkedIn */}
@@ -1448,39 +1459,39 @@ export default function App() {
                 {/* Subtle accent gradient inside dark banner */}
                 <div className="absolute -right-24 -top-24 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
 
-                <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-space-xl">
+                <div className="relative z-10 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6 sm:gap-space-xl">
                   {/* Banner Text & Value Props */}
-                  <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl">
+                  <div className="flex flex-col items-start text-left max-w-2xl w-full">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/20 text-inverse-primary font-label-sm text-xs sm:text-label-sm font-semibold mb-3 sm:mb-space-md">
                       <span className="w-2 h-2 rounded-full bg-primary-container"></span>
                       Immediate Availability
                     </span>
-                    <h2 className="font-headline-lg text-2xl sm:text-headline-lg lg:text-display text-on-primary tracking-tight font-extrabold leading-tight">
+                    <h2 className="font-headline-lg text-2xl sm:text-headline-lg lg:text-display text-on-primary tracking-tight font-extrabold leading-tight text-left">
                       Hire Me for Your Hourly Project
                     </h2>
-                    <p className="font-body-md text-xs sm:text-body-md text-outline-variant mt-2 sm:mt-space-sm mb-4 sm:mb-space-lg leading-relaxed">
+                    <p className="font-body-md text-xs sm:text-body-md text-outline-variant mt-2 sm:mt-space-sm mb-4 sm:mb-space-lg leading-relaxed text-left">
                       Flexible, transparent hourly contracting for dedicated sprints, custom Velo scripts, responsive overhauls, and continuous platform architecture.
                     </p>
 
                     {/* 3 Short Value Propositions */}
-                    <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-space-md">
+                    <div className="flex flex-col sm:flex-row flex-wrap items-start justify-start gap-2.5 sm:gap-space-md w-full">
                       <div className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-primary-container text-[18px] sm:text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        <span className="material-symbols-outlined text-primary-container text-[18px] sm:text-[20px] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
                           check_circle
                         </span>
-                        <span className="font-label-md text-xs sm:text-label-md text-on-primary font-medium">High-Quality Work</span>
+                        <span className="font-label-md text-xs sm:text-label-md text-on-primary font-medium text-left">High-Quality Work</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-primary-container text-[18px] sm:text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        <span className="material-symbols-outlined text-primary-container text-[18px] sm:text-[20px] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
                           check_circle
                         </span>
-                        <span className="font-label-md text-xs sm:text-label-md text-on-primary font-medium">On-Time Delivery</span>
+                        <span className="font-label-md text-xs sm:text-label-md text-on-primary font-medium text-left">On-Time Delivery</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-primary-container text-[18px] sm:text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        <span className="material-symbols-outlined text-primary-container text-[18px] sm:text-[20px] shrink-0" style={{ fontVariationSettings: "'FILL' 1" }}>
                           check_circle
                         </span>
-                        <span className="font-label-md text-xs sm:text-label-md text-on-primary font-medium">Professional Communication</span>
+                        <span className="font-label-md text-xs sm:text-label-md text-on-primary font-medium text-left">Professional Communication</span>
                       </div>
                     </div>
                   </div>
@@ -1530,8 +1541,9 @@ export default function App() {
               Wix Verified Partner
             </a>
             <span className="text-outline-variant">•</span>
-            <a href={CLUTCH_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[#bc4800] transition-colors">
-              Clutch 4.9
+            <a href={FIVERR_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="hover:text-[#0d7d49] transition-colors flex items-center gap-1 font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1DBF73]"></span>
+              Fiverr 4.9★
             </a>
             <span className="text-outline-variant">•</span>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-800 transition-colors font-medium">
