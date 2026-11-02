@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-tertiary-container: #ffede6;
+  --color-secondary-container: #d7dff9;
+  --color-on-primary: #ffffff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-tertiary-container: #bc4800;
+  --color-inverse-primary: #b4c5ff;
+  --color-surface-container: #e5eeff;
+  --color-secondary-fixed: #d9e2fc;
+  --color-on-tertiary-fixed-variant: #7d2d00;
+  --color-on-background: #0b1c30;
+  --color-primary-fixed: #dbe1ff;
+  --color-on-surface-variant: #434655;
+  --color-primary: #004ac6;
+  --color-surface-container-high: #dce9ff;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-outline-variant: #c3c6d7;
+  --color-on-secondary-fixed: #121b2e;
+  --color-on-primary-fixed: #00174b;
+  --color-tertiary: #943700;
+  --color-surface-bright: #f8f9ff;
+  --color-secondary-fixed-dim: #bdc6e0;
+  --color-tertiary-fixed-dim: #ffb596;
+  --color-error: #ba1a1a;
+  --color-on-primary-fixed-variant: #003ea8;
+  --color-outline: #737686;
+  --color-background: #f8f9ff;
+  --color-on-tertiary: #ffffff;
+  --color-surface-dim: #cbdbf5;
+  --color-on-primary-container: #eeefff;
+  --color-on-surface: #0b1c30;
+  --color-on-secondary: #ffffff;
+  --color-surface-tint: #0053db;
+  --color-tertiary-fixed: #ffdbcd;
+  --color-on-secondary-fixed-variant: #3e475b;
+  --color-surface: #f8f9ff;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-on-tertiary-fixed: #360f00;
+  --color-on-error-container: #93000a;
+  --color-secondary: #555e74;
+  --color-primary-container: #2563eb;
+  --color-primary-fixed-dim: #b4c5ff;
+  --color-surface-variant: #d3e4fe;
+  --color-on-secondary-container: #5a6278;
+  --color-inverse-surface: #213145;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-desktop: 2rem;
+  --spacing-margin: 1.25rem;
+  --spacing-margin-tablet: 2rem;
+  --spacing-margin-desktop: 4rem;
+  --spacing-space-2xl: 4rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-xs: 0.25rem;
+
+  --font-headline-lg: 'Manrope', sans-serif;
+  --font-display: 'Manrope', sans-serif;
+  --font-body-sm: 'Inter', sans-serif;
+  --font-headline-md: 'Manrope', sans-serif;
+  --font-display-mobile: 'Manrope', sans-serif;
+  --font-label-sm: 'Inter', sans-serif;
+  --font-body-md: 'Inter', sans-serif;
+  --font-headline-sm: 'Manrope', sans-serif;
+  --font-label-md: 'Inter', sans-serif;
+  --font-headline-lg-mobile: 'Manrope', sans-serif;
+  --font-body-lg: 'Inter', sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    overscroll-behavior-y: auto;
+    font-family: 'Inter', sans-serif;
+    color: #0b1c30;
+    background-color: #f8f9ff;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .text-display {
+    font-size: 2.15rem !important;
+    line-height: 2.55rem !important;
+    letter-spacing: -0.02em !important;
+  }
+  .text-headline-lg {
+    font-size: 1.75rem !important;
+    line-height: 2.15rem !important;
+    letter-spacing: -0.015em !important;
+  }
+  .text-headline-md {
+    font-size: 1.35rem !important;
+    line-height: 1.75rem !important;
+  }
+}
+
+/* Custom Typography Helpers to match exact design specification */
+.font-display {
+  font-family: 'Manrope', sans-serif;
+}
+.font-headline-lg {
+  font-family: 'Manrope', sans-serif;
+}
+.font-headline-md {
+  font-family: 'Manrope', sans-serif;
+}
+.font-headline-sm {
+  font-family: 'Manrope', sans-serif;
+}
+.font-body-lg {
+  font-family: 'Inter', sans-serif;
+}
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+}
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+}
+.font-label-md {
+  font-family: 'Inter', sans-serif;
+}
+.font-label-sm {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-display {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+.text-headline-lg {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+.text-headline-md {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+.text-headline-sm {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.text-body-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+}
+.text-body-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.text-body-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+.text-label-md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+.text-label-sm {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
