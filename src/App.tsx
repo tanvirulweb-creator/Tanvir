@@ -896,12 +896,20 @@ export default function App() {
                 {/* 1. Wix Partner */}
                 <div className="bg-surface-container-lowest p-4 sm:p-space-lg rounded-xl shadow-xs border border-surface-container flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
                   <div className="flex flex-col items-start gap-3 sm:gap-space-md">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-surface-container-lowest flex items-center justify-center p-2 shadow-xs border border-surface-container">
-                      <img
-                        src="https://images.seeklogo.com/logo-png/30/2/wix-com-logo-png_seeklogo-307036.png"
-                        alt="Wix Logo"
-                        className="w-full h-full object-contain"
-                      />
+                    <div className="w-full flex items-center justify-between">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-surface-container-lowest flex items-center justify-center p-2 shadow-xs border border-surface-container">
+                        <img
+                          src="https://images.seeklogo.com/logo-png/30/2/wix-com-logo-png_seeklogo-307036.png"
+                          alt="Wix Logo"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                      <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-700 flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[13px] text-amber-500" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          star
+                        </span>
+                        5.0 Rating
+                      </span>
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
@@ -931,8 +939,16 @@ export default function App() {
                 {/* 2. Fiverr Profile */}
                 <div className="bg-surface-container-lowest p-4 sm:p-space-lg rounded-xl shadow-xs border border-surface-container flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
                   <div className="flex flex-col items-start gap-3 sm:gap-space-md">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#1DBF73]/10 text-[#1DBF73] flex items-center justify-center font-bold text-xl sm:text-2xl tracking-tighter shadow-xs">
-                      fi.
+                    <div className="w-full flex items-center justify-between">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#1DBF73]/10 text-[#1DBF73] flex items-center justify-center font-bold text-xl sm:text-2xl tracking-tighter shadow-xs">
+                        fi.
+                      </div>
+                      <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-700 flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[13px] text-amber-500" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          star
+                        </span>
+                        4.9 Rating
+                      </span>
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
@@ -962,9 +978,17 @@ export default function App() {
                 {/* 3. Fiverr Agency */}
                 <div className="bg-surface-container-lowest p-4 sm:p-space-lg rounded-xl shadow-xs border border-surface-container flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
                   <div className="flex flex-col items-start gap-3 sm:gap-space-md">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 text-primary-container flex items-center justify-center shadow-xs">
-                      <span className="material-symbols-outlined text-[26px] sm:text-[30px]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                        corporate_fare
+                    <div className="w-full flex items-center justify-between">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 text-primary-container flex items-center justify-center shadow-xs">
+                        <span className="material-symbols-outlined text-[26px] sm:text-[30px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          corporate_fare
+                        </span>
+                      </div>
+                      <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-700 flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[13px] text-amber-500" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          star
+                        </span>
+                        4.9 Rating
                       </span>
                     </div>
                     <div>
@@ -1003,11 +1027,8 @@ export default function App() {
                           className="w-full h-full object-contain"
                         />
                       </div>
-                      <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary flex items-center gap-1">
-                        <span className="material-symbols-outlined text-[13px] text-amber-500" style={{ fontVariationSettings: "'FILL' 1" }}>
-                          star
-                        </span>
-                        4.9 Rating
+                      <span className="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container text-secondary">
+                        B2B Directory
                       </span>
                     </div>
                     <div>
